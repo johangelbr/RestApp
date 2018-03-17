@@ -1,0 +1,16 @@
+<ion-segment color="primary" [(ngModel)]="TopMenu">
+    <ion-segment-button value="Menú" (click)="close('Menú')">
+            <ion-icon name="apps"></ion-icon>
+        </ion-segment-button>
+    <ion-segment-button  value="Entradas" (click)="close('Entradas')">
+        <ion-icon name="log-in"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button small value="Platos" (click)="close('Platos')">
+        <ion-icon name="book"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button small value="Bebidas" (click)="close('Bebidas')">
+        <ion-icon name="beer"></ion-icon>
+    </ion-segment-button>
+
+</ion-segment>
+

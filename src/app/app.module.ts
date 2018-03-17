@@ -3,21 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CheckoutPage } from '../pages/checkout/checkout';
+import { MenuPage } from '../pages/menu/menu';
+import { QrScannerPage } from '../pages/qr-scanner/qr-scanner';
+import { NfcPage } from '../pages/nfc/nfc';
+import { HideHeaderDirective } from '../directives/hide-header/hide-header';
+import { PopoverSearchPage } from '../pages/popover-search/popover-search';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    TabsPage,
+    CheckoutPage,
+    MenuPage,
+    QrScannerPage,
+    NfcPage,
+    HideHeaderDirective,
+    PopoverSearchPage
   ],
   imports: [
     BrowserModule,
@@ -26,10 +32,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    TabsPage,
+    CheckoutPage,
+    MenuPage,
+    QrScannerPage,
+    NfcPage,
+    PopoverSearchPage
   ],
   providers: [
     StatusBar,
